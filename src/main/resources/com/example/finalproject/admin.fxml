@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="343.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.adminController">
+   <children>
+      <ImageView fitHeight="384.0" fitWidth="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" spacing="10.0" />
+      <PasswordField fx:id="password" layoutX="288.0" layoutY="172.0" promptText="password" />
+      <HBox alignment="TOP_CENTER" />
+      <HBox alignment="CENTER" spacing="10.0" />
+      <Button layoutX="174.0" layoutY="238.0" mnemonicParsing="false" onAction="#adminPage" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: red;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font></Button>
+      <Label layoutX="174.0" layoutY="177.0" text="Password:">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <Label layoutX="172.0" layoutY="137.0" text="Username:">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font></Label>
+      <TextField fx:id="username" layoutX="288.0" layoutY="132.0" promptText="username" text="Admin" />
+      <Label alignment="CENTER" layoutX="127.0" layoutY="28.0" prefHeight="103.0" prefWidth="286.0" text="Admin Login" textFill="RED">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="incorPass" layoutX="288.0" layoutY="198.0" prefHeight="18.0" prefWidth="92.0" style="-fx-text-fill: FF0000;" />
+      <Button layoutX="317.0" layoutY="238.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="92.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font></Button>
+      <ImageView fitHeight="59.0" fitWidth="92.0" layoutX="14.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@toyotalogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
